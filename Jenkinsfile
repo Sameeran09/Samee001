@@ -12,7 +12,7 @@ ipipeline {
         }
         stage('Build Image') {
             steps {
-		echo 'docker build -t Vanshu009/jenkinstest:$BUILD_NUMBER ./docker build -f jenkinstest0 ./'
+		echo 'docker build -t Vanshu009/jenkinstest:$BUILD_NUMBER ./docker build -f ProductionDockerfile ./'
             }
         }
         stage('Docker Login') {
