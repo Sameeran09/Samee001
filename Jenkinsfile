@@ -1,4 +1,4 @@
-pipeline {
+ipipeline {
     agent any
     environment{
         DOCKERHUB_CREDS = credentials('dockerhub')
@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-		echo 'docker build -t Vanshu009/jenkinstest:$BUILD_NUMBER ./docker build -f ProductionDockerfile ./'
+		echo 'docker build -t Vanshu009/jenkinstest:$BUILD_NUMBER ./docker build -f jenkinstest0 ./'
             }
         }
         stage('Docker Login') {
